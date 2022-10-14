@@ -45,4 +45,3 @@ class Square:
                 self.__position = value
             else:
                 TypeError("position must be a tuple of 2 positive integers")
-
