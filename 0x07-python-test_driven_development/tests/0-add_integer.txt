@@ -1,0 +1,10 @@
+::
+
+>>>from 0-add_integer.py import add_integer
+
+	>>>add_integer(3,5)
+	>>>8
+
+::
+	>>>add_integer(4.8, 6)
+	>>>11
