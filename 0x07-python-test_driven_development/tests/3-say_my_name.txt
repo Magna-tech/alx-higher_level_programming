@@ -1,0 +1,6 @@
+::
+
+	>>>from 3-say_my_name.py import say_my_name
+
+	>>>say_my_name("Nate", "Mag")
+	Nate Mag
