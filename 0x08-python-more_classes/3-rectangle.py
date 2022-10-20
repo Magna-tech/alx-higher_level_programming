@@ -45,3 +45,10 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
+        else:
+            rect = []
+            for i in range(self.height):
+                [rect.append("#")for j in range(self.width)]
+                if i != self.height - 1:
+                    rect.append("\n")
+            return ("".join(rect))
