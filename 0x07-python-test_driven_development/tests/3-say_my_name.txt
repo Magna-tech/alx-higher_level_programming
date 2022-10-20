@@ -1,6 +1,30 @@
-::
+:
 
-	>>>from 3-say_my_name.py import say_my_name
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Nate", "Mag")
+    My name is Nate Mag
 
-	>>>say_my_name("Nate", "Mag")
-	Nate Mag
+:
+
+    >>> say_my_name(1, "Mumbi")
+    TypeError: first_name must be a string
+
+:
+
+    >>> say_my_name("Victor", 3)
+    TypeError: last_name must be a string
+
+:
+
+    >>> say_my_name(43, 55)
+    TypeError: first_name must be a string
+
+:
+
+    >>> say_my_name("None", "")
+    My name is None 
+
+:
+
+    >>> say_my_name("", "Johnson")
+    My name is  Johnson
