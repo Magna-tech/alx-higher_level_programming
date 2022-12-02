@@ -1,2 +1,2 @@
 -- list full description of first_table without using EXPLAIN or DESCRIBE
-DESC first_table;
+SHOW CREATE TABLE first_table;
