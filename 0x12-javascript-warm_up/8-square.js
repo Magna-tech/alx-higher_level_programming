@@ -2,8 +2,14 @@
 if (isNaN(process.argv[2])) {
   console.log('Missing size');
 }
-for (i = 0; i < ~~process.argv[2]; i++) {
-  for (j = 0; j < ~~process.argv[2]; j++) {
-    console.log('X');
-  }
+const size = ~~process.argv[2];
+let i = 0;
+let line = 'X';
+for (i = 0; i < size - 1; i++) {
+  line += 'X';
+}
+i = 0;
+while (i < size) {
+  console.log(line);
+  i++;
 }
