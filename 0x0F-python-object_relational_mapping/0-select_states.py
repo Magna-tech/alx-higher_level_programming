@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Script to list db values"""
+"""Script to list all states in the database"""
 
 
 import sys
