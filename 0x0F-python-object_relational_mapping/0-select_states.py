@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Script to list db values"""
+
+
 import sys
 import MySQLdb
 
