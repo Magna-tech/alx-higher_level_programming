@@ -1,9 +1,9 @@
 # 0x00-python-hello_world
 
 ## 0. Run Python file
-Shell script that runs a Python script
+A shell script that runs a Python script
 ## 1. Run inline
-Shell script that runs Python code
+A shell script to run Python code
 ## 2. Hello, print
 Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line
 ## 3. Print integer
