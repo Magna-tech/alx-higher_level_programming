@@ -8,29 +8,17 @@
 */
 int check_cycle(listint_t *list)
 {
-	int i = 0, j = 0, ret;
+	listint_t *i = list, *j = list;
 
-	while (list)
+	while (i && j && j->next)
 	{
-		j++;
-		list = list->next;
+		i = i->next;
+		j = j->next->next;
+		if (i == j)
+		{
+			return (1);
+		}
 	}
 
-	while (list)
-	{
-		if (i == j && list->next == NULL)
-		{
-			ret = 0;
-			break;
-		}
-		else
-		{
-			ret = 1;
-			break;
-		}
-		i++;
-		list = list->next;
-	}
-
-	return (ret);
+	return (0);
 }
