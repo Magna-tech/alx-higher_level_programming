@@ -12,7 +12,9 @@ int is_palindrome(listint_t **head)
 		return (0);
 
 	return (p_recursive(head, *head));
+
 }
+
 
 /**
  * p_recursive - Helper function to recursively check palindrome.
