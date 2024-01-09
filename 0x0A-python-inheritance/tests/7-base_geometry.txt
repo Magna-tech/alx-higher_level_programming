@@ -1,0 +1,10 @@
+>>>BaseGeometry = __import__('7-base_geometry').BaseGeometry 
+
+>>>BaseGeometry("count", "two")
+[TypeError] name must be an integer
+
+>>>BaseGeometry("Age", 0)
+[ValueError] age must be greater than 0
+
+>>>BaseGeometry("Distance", -5)
+[ValueError] distance must be greater than 0
