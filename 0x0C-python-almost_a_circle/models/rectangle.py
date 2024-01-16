@@ -74,16 +74,16 @@ class Rectangle(Base):
     def validate(self, name, value):
         """Validate value to be a positive integer"""
         if not isinstance(value, int):
-            raise TypeError(f"{name} must be an integer.")
+            raise TypeError(f"{name} must be an integer")
         elif value <= 0:
-            raise ValueError(f"{name} must be > 0.")
+            raise ValueError(f"{name} must be > 0")
 
     def validation(self, name, value):
         """Validate value to be a non-negative integer"""
         if not isinstance(value, int):
-            raise TypeError(f"{name} must be an integer.")
+            raise TypeError(f"{name} must be an integer")
         elif value < 0:
-            raise ValueError(f"{name} must be >= 0.")
+            raise ValueError(f"{name} must be >= 0")
 
     def area(self):
         """Returns the area of the rectangle"""
