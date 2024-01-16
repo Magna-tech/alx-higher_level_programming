@@ -29,7 +29,6 @@ class Rectangle(Base):
         self.validation("x", x)
         self.validation("y", y)
 
-
         self.__width = width
         self.__height = height
         self.__x = x
