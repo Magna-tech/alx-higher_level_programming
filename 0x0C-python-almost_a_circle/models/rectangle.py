@@ -24,6 +24,12 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """We initialize the values"""
+        self.validate("width", width)
+        self.validate("height", height)
+        self.validation("x", x)
+        self.validation("y", y)
+
+
         self.__width = width
         self.__height = height
         self.__x = x
