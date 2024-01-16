@@ -17,47 +17,47 @@ class Base:
 
 class Rectangle(Base):
     """This class inherits from the base class"""
-    __width = 0
-    __height = 0
-    __x = 0
-    __y = 0
+    _width = 0
+    _height = 0
+    _x = 0
+    _y = 0
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """We initialize the values"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self._width = width
+        self._height = height
+        self._x = x
+        self._y = y
         super().__init__(id)
 
     @property
     def width(self):
-        return self.__width
+        return self._width
 
     @width.setter
     def width(self, value):
-        self.__width = value
+        self._width = value
 
     @property
     def height(self):
-        return self.__height
+        return self._height
 
     @height.setter
     def height(self, value):
-        self.__height = value
+        self._height = value
 
     @property
     def x(self):
-        return self.__x
+        return self._x
 
     @x.setter
     def x(self, value):
-        self.__x = value
+        self._x = value
 
     @property
     def y(self):
-        return self.__y
+        return self._y
 
     @y.setter
     def y(self, value):
-        self.__y = value
+        self._y = value
