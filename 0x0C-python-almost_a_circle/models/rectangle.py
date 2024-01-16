@@ -24,40 +24,40 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """We initialize the values"""
-        Rectangle.__width = width
-        Rectangle.__height = height
-        Rectangle.__x = x
-        Rectangle.__y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
         super().__init__(id)
 
     @property
     def width(self):
-        return Rectangle.__width
+        return self.__width
 
     @width.setter
     def set_width(self):
-        Rectangle.__width = width
+        self.__width = width
 
     @property
     def height(self):
-        return Rectangle.__height
+        return self.__height
 
     @height.setter
     def set_height(self):
-        Rectangle.__height = height
+        self.__height = height
 
     @property
     def x(self):
-        return Rectangle.__x
+        return self.__x
 
     @x.setter
     def set_x(self):
-        Rectangle.__x = x
+        self.__x = x
 
     @property
     def y(self):
-        return Rectangle.__y
+        return self.__y
 
     @y.setter
     def set_y(self):
-        Rectangle.__y = y
+        self.__y = y
