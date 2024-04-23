@@ -3,7 +3,7 @@
 const fs = require('fs');
 
 // Check if the file path and string to write arguments are provided
-if (process.argv.length < 4) {
+if (process.argv.length < 3) {
   console.error('Usage: ./1-writeme.js <file_path> <string_to_write>');
   process.exit(1);
 }
