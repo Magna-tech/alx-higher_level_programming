@@ -29,7 +29,7 @@ request(url, (error, response, body) => {
   // Write the response body to the specified file
   fs.writeFile(filePath, body, 'utf8', (err) => {
     if (err) {
-      console.error('Error writing to file:', err);
+      console.error(err);
     } else {
       console.log(`Successfully saved webpage content to ${filePath}`);
     }
